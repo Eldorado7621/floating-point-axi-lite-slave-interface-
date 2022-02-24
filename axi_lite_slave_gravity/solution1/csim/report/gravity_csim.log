@@ -1,0 +1,18 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_core.cpp in debug mode
+   Compiling ../../../../core.cpp in debug mode
+   Generating csim.exe
+Testing gravity4196464)Force: 2000000000.000000 Ref: 2000000000.000000 Diff 0.000000
+4196508)Force: 2000.000000 Ref: 2000.000000 Diff 0.000000
+4196508)Force: 500.000000 Ref: 500.000000 Diff 0.000000
+4196508)Force: 222.222229 Ref: 222.000000 Diff 0.222229
+4196508)Force: 125.000000 Ref: 125.000000 Diff 0.000000
+4196508)Force: 80.000000 Ref: 80.000000 Diff 0.000000
+4196508)Force: 55.555557 Ref: 55.556000 Diff 0.000443
+4196508)Force: 40.816326 Ref: 40.816000 Diff 0.000326
+4196508)Force: 31.250000 Ref: 31.250000 Diff 0.000000
+4196508)Force: 24.691359 Ref: 24.691000 Diff 0.000359
+No errors occured average error: 0.022336
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

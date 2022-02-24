@@ -1,5 +1,5 @@
 
-float gravity (float m1, float m2, float dist)
+float gravity (float m1, float m2, float distc)
 {
     #pragma HLS INTERFACE s_axilite port=return bundle=CRTLS
     #pragma HLS INTERFACE s_axilite port=m2 bundle=CRTLS

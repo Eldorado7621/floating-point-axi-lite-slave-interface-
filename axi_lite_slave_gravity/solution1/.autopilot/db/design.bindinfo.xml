@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln12_fu_105_p2" SOURCE="core.cpp:12" VARIABLE="icmp_ln12" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln12_1_fu_111_p2" SOURCE="core.cpp:12" VARIABLE="icmp_ln12_1" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="or_ln12_fu_117_p2" SOURCE="core.cpp:12" VARIABLE="or_ln12" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fcmp" ID="" IMPL="auto" LATENCY="1" OPTYPE="fcmp" PRAGMA="" RTLNAME="fcmp_32ns_32ns_1_2_no_dsp_1_U4" SOURCE="core.cpp:12" VARIABLE="tmp_1" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln12_fu_121_p2" SOURCE="core.cpp:12" VARIABLE="and_ln12" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U1" SOURCE="core.cpp:16" VARIABLE="distSquare" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="distSquare_1_fu_126_p3" SOURCE="core.cpp:12" VARIABLE="distSquare_1" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U1" SOURCE="core.cpp:17" VARIABLE="mul1" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U2" SOURCE="core.cpp:17" VARIABLE="mul2" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fdiv" ID="" IMPL="fabric" LATENCY="15" OPTYPE="fdiv" PRAGMA="" RTLNAME="fdiv_32ns_32ns_32_16_no_dsp_1_U3" SOURCE="core.cpp:17" VARIABLE="force" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="CRTLS_s_axi_U" SOURCE="" VARIABLE="" MODULE="gravity" LOOP="" BUNDLEDNAME="CRTLS" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

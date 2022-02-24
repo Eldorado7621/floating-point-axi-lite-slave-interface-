@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Feb 25 00:34:05 2022
+# Process ID: 28097
+# Current directory: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axi_lite_slave_gravity/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axi_lite_slave_gravity/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axi_lite_slave_gravity/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On: sam-HP-Pavilion-Laptop-15-eg0xxx, OS: Linux, CPU Frequency: 1933.899 MHz, CPU Physical cores: 4, Host memory: 16540 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

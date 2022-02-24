@@ -4,7 +4,7 @@
 
 int main()
 {
-    printf("Testing gravity");
+    printf("Testing gravity \n");
     float errorAcc=0;
 
     for(int idx=0; idx<10;idx++)
@@ -14,7 +14,7 @@ int main()
         float errorCalc=fabsf(force-goldRef[idx]);
         errorAcc+=errorCalc;
 
-        printf("%d)Force: %f Ref: %f Diff%f\n",force,goldRef[idx],errorAcc)
+        printf("%d)Force: %f Ref: %f Diff %f\n",force,goldRef[idx],errorCalc);
 
         if(errorCalc>1)
         {
@@ -23,6 +23,6 @@ int main()
         }
     }
 
-    printf("No errors occured average error: %f\n",errorAcc/10.0f)
+    printf("No errors occured average error: %f\n",errorAcc/10.0f);
     return 0;
 }

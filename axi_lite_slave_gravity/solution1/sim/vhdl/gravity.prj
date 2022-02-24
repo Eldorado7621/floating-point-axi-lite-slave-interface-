@@ -1,0 +1,13 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv xil_defaultlib "ip/xil_defaultlib/gravity_fmul_32ns_32ns_32_4_max_dsp_1_ip.v"
+sv xil_defaultlib "ip/xil_defaultlib/gravity_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v"
+sv xil_defaultlib "ip/xil_defaultlib/gravity_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v"
+sv work "glbl.v"
+vhdl xil_defaultlib "gravity_fmul_32ns_32ns_32_4_max_dsp_1.vhd"
+vhdl xil_defaultlib "gravity_CRTLS_s_axi.vhd"
+vhdl xil_defaultlib "gravity_fcmp_32ns_32ns_1_2_no_dsp_1.vhd"
+vhdl xil_defaultlib "gravity.autotb.vhd"
+vhdl xil_defaultlib "AESL_axi_slave_CRTLS.vhd"
+vhdl xil_defaultlib "gravity_fdiv_32ns_32ns_32_16_no_dsp_1.vhd"
+vhdl xil_defaultlib "gravity.vhd"
+

@@ -1,0 +1,117 @@
+
+
+================================================================
+== Synthesis Summary Report of 'gravity'
+================================================================
++ General Information: 
+    * Date:           Fri Feb 25 00:24:40 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+    * Project:        axi_lite_slave_gravity
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+    |  Modules  | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |        |          |           |     |
+    |  & Loops  | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT    | URAM|
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+    |+ gravity  |     -|  0.60|       23|  230.000|         -|       24|     -|        no|     -|  6 (7%)|  630 (1%)|  1143 (6%)|    -|
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-------------+------------+---------------+--------+----------+
+| Interface   | Data Width | Address Width | Offset | Register |
++-------------+------------+---------------+--------+----------+
+| s_axi_CRTLS | 32         | 6             | 24     | 0        |
++-------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| Interface   | Register  | Offset | Width | Access | Description                      | Bit Fields                                               |
++-------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| s_axi_CRTLS | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART |
+| s_axi_CRTLS | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                 |
+| s_axi_CRTLS | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN             |
+| s_axi_CRTLS | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST             |
+| s_axi_CRTLS | ap_return | 0x10   | 32    | R      | Data signal of ap_return         |                                                          |
+| s_axi_CRTLS | m1        | 0x18   | 32    | W      | Data signal of m1                |                                                          |
+| s_axi_CRTLS | m2        | 0x20   | 32    | W      | Data signal of m2                |                                                          |
+| s_axi_CRTLS | distc     | 0x28   | 32    | W      | Data signal of distc             |                                                          |
++-------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| m1       | in        | float    |
+| m2       | in        | float    |
+| distc    | in        | float    |
+| return   | out       | float    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+----------+-------------------------------------+
+| Argument | HW Interface | HW Type  | HW Info                             |
++----------+--------------+----------+-------------------------------------+
+| m1       | s_axi_CRTLS  | register | name=m1 offset=0x18 range=32        |
+| m2       | s_axi_CRTLS  | register | name=m2 offset=0x20 range=32        |
+| distc    | s_axi_CRTLS  | register | name=distc offset=0x28 range=32     |
+| return   | s_axi_CRTLS  | register | name=ap_return offset=0x10 range=32 |
++----------+--------------+----------+-------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+------------+------+--------+---------+
+| Name                               | DSP | Pragma | Variable   | Op   | Impl   | Latency |
++------------------------------------+-----+--------+------------+------+--------+---------+
+| + gravity                          | 6   |        |            |      |        |         |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U1 | 3   |        | distSquare | fmul | maxdsp | 3       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U1 | 3   |        | mul1       | fmul | maxdsp | 3       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2 | 3   |        | mul2       | fmul | maxdsp | 3       |
+|   fdiv_32ns_32ns_32_16_no_dsp_1_U3 | -   |        | force      | fdiv | fabric | 15      |
++------------------------------------+-----+--------+------------+------+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------+-------------------------------+
+| Type      | Options                            | Location                      |
++-----------+------------------------------------+-------------------------------+
+| interface | s_axilite port=return bundle=CRTLS | core.cpp:4 in gravity, return |
+| interface | s_axilite port=m2 bundle=CRTLS     | core.cpp:5 in gravity, m2     |
+| interface | s_axilite port=m1 bundle=CRTLS     | core.cpp:6 in gravity, m1     |
+| interface | s_axilite port=distc bundle=CRTLS  | core.cpp:7 in gravity, distc  |
++-----------+------------------------------------+-------------------------------+
+
+

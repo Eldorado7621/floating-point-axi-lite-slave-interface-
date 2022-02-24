@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="gravity.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_gravity_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">m1__m2__distc__ap_local_deadlock__ap_return__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/interrupt">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_BRESP">
+               <obj_property name="ElementShortName">s_axi_CRTLS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_BREADY">
+               <obj_property name="ElementShortName">s_axi_CRTLS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_BVALID">
+               <obj_property name="ElementShortName">s_axi_CRTLS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_RRESP">
+               <obj_property name="ElementShortName">s_axi_CRTLS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_RDATA">
+               <obj_property name="ElementShortName">s_axi_CRTLS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_RREADY">
+               <obj_property name="ElementShortName">s_axi_CRTLS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_RVALID">
+               <obj_property name="ElementShortName">s_axi_CRTLS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_ARREADY">
+               <obj_property name="ElementShortName">s_axi_CRTLS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_ARVALID">
+               <obj_property name="ElementShortName">s_axi_CRTLS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_ARADDR">
+               <obj_property name="ElementShortName">s_axi_CRTLS_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_WSTRB">
+               <obj_property name="ElementShortName">s_axi_CRTLS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_WDATA">
+               <obj_property name="ElementShortName">s_axi_CRTLS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_WREADY">
+               <obj_property name="ElementShortName">s_axi_CRTLS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_WVALID">
+               <obj_property name="ElementShortName">s_axi_CRTLS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_AWREADY">
+               <obj_property name="ElementShortName">s_axi_CRTLS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_AWVALID">
+               <obj_property name="ElementShortName">s_axi_CRTLS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/AESL_inst_gravity/s_axi_CRTLS_AWADDR">
+               <obj_property name="ElementShortName">s_axi_CRTLS_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_CRTLS_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group22">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group23">
+            <obj_property name="label">return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_local_block">
+               <obj_property name="ElementShortName">ap_local_block</obj_property>
+               <obj_property name="ObjectShortName">ap_local_block</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group25">
+         <obj_property name="label">Block-level IO Handshake(internal)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group30">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group32">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_gravity_top/AESL_inst_gravity/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group34">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group35">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group36">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="other" fp_name="/apatb_gravity_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group37">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="other" fp_name="/apatb_gravity_top/LENGTH_m1">
+               <obj_property name="ElementShortName">LENGTH_m1</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m1</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="other" fp_name="/apatb_gravity_top/LENGTH_m2">
+               <obj_property name="ElementShortName">LENGTH_m2</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m2</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="other" fp_name="/apatb_gravity_top/LENGTH_distc">
+               <obj_property name="ElementShortName">LENGTH_distc</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_distc</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="other" fp_name="/apatb_gravity_top/LENGTH_ap_return">
+               <obj_property name="ElementShortName">LENGTH_ap_return</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_ap_return</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group45">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group46">
+            <obj_property name="label">m1__m2__distc__ap_local_deadlock__ap_return__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_INTERRUPT">
+               <obj_property name="ElementShortName">CRTLS_INTERRUPT</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_INTERRUPT</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_BRESP">
+               <obj_property name="ElementShortName">CRTLS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_BREADY">
+               <obj_property name="ElementShortName">CRTLS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_BVALID">
+               <obj_property name="ElementShortName">CRTLS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_RRESP">
+               <obj_property name="ElementShortName">CRTLS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_RDATA">
+               <obj_property name="ElementShortName">CRTLS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_RREADY">
+               <obj_property name="ElementShortName">CRTLS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_RVALID">
+               <obj_property name="ElementShortName">CRTLS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_ARREADY">
+               <obj_property name="ElementShortName">CRTLS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_ARVALID">
+               <obj_property name="ElementShortName">CRTLS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_ARADDR">
+               <obj_property name="ElementShortName">CRTLS_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_WSTRB">
+               <obj_property name="ElementShortName">CRTLS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_WDATA">
+               <obj_property name="ElementShortName">CRTLS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_WREADY">
+               <obj_property name="ElementShortName">CRTLS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_WVALID">
+               <obj_property name="ElementShortName">CRTLS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_AWREADY">
+               <obj_property name="ElementShortName">CRTLS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/CRTLS_AWVALID">
+               <obj_property name="ElementShortName">CRTLS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_gravity_top/CRTLS_AWADDR">
+               <obj_property name="ElementShortName">CRTLS_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">CRTLS_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group65">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group66">
+            <obj_property name="label">return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_gravity_top/ap_local_block">
+               <obj_property name="ElementShortName">ap_local_block</obj_property>
+               <obj_property name="ObjectShortName">ap_local_block</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
