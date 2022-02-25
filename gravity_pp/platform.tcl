@@ -17,3 +17,5 @@ platform generate -domains
 platform active {gravity_pp}
 platform generate
 bsp reload
+platform clean
+platform generate

@@ -456,3 +456,4 @@ dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
 dismissDialog("Launch Vitis IDE"); // bA
 // HMemoryUtils.trashcanNow. Engine heap size: 2,502 MB. GUI used memory: 121 MB. Current time: 2/25/22, 1:59:45 AM CET
 // HMemoryUtils.trashcanNow. Engine heap size: 2,502 MB. GUI used memory: 108 MB. Current time: 2/25/22, 2:29:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,502 MB. GUI used memory: 108 MB. Current time: 2/25/22, 2:59:46 AM CET

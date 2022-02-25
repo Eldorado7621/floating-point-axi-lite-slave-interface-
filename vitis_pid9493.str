@@ -99,3 +99,7 @@ selectTree("xparameters.h", EventType.DOUBLE_CLICK, "Outline", "ContentOutline",
 setCombo("gravity", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
 selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
 activateView("*helloworld.c", "gravity_app/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 2/25/22, 3:17:36 AM CET
+// Elapsed time: 01:42:57
+

@@ -1,0 +1,25 @@
+11:37:35 **** Incremental Build of configuration Debug for project gravity_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/sam/git_workspace/floating-point-axi-lite-slave-interface-/gravity_pp/export/gravity_pp/sw/gravity_pp/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gravity_app.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/sam/git_workspace/floating-point-axi-lite-slave-interface-/gravity_pp/export/gravity_pp/sw/gravity_pp/standalone_domain/bsplib/lib -o "gravity_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gravity_app.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gravity_app.elf  |tee "gravity_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54883	   2644	  22640	  80167	  13927	gravity_app.elf
+Finished building: gravity_app.elf.size
+ 
+
+11:37:35 Build Finished (took 162ms)
+

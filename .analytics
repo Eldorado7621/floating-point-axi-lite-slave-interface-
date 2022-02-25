@@ -4,3 +4,23 @@ timestamp=[2022-02-25 01:34:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2022-02-25 01:37:09], mode=PLATFORM_CREATION, duration=0:00:06.448, duration_ms=6448, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
 timestamp=[2022-02-25 01:37:33], mode=PLATFORM_GENERATION, duration=0:00:10.492, duration_ms=10492, data={name=gravity_pp}
 timestamp=[2022-02-25 01:38:24], mode=APP_CREATION, duration=0:00:04.871, duration_ms=4871, data={name=gravity_app, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=gravity_pp, application_type=application}
+timestamp=[2022-02-25 09:33:43], mode=WORKBENCH_START, duration=0:00:05.725, duration_ms=5725, data={}
+timestamp=[2022-02-25 09:33:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.029, duration_ms=29, data={}
+timestamp=[2022-02-25 09:33:45], mode=WORKBENCH_UI_INIT, duration=0:00:01.076, duration_ms=1076, data={editors_count=6, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,gravity_app,gravity_app_system,gravity_pp}
+timestamp=[2022-02-25 10:41:37], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:23:29], mode=BUILD, duration=0:00:00.121, duration_ms=121, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:25:50], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:26:26], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:27:41], mode=WORKBENCH_START, duration=0:00:05.343, duration_ms=5343, data={}
+timestamp=[2022-02-25 11:27:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.043, duration_ms=43, data={}
+timestamp=[2022-02-25 11:27:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.831, duration_ms=831, data={editors_count=6, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,gravity_app,gravity_app_system,gravity_pp}
+timestamp=[2022-02-25 11:28:25], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:31:38], mode=PLATFORM_GENERATION, duration=0:00:06.420, duration_ms=6420, data={name=gravity_pp}
+timestamp=[2022-02-25 11:31:38], mode=BUILD, duration=0:00:00.068, duration_ms=68, data={name=gravity_app, configuration=Debug, clean_build=true}
+timestamp=[2022-02-25 11:31:58], mode=PLATFORM_GENERATION, duration=0:00:10.112, duration_ms=10112, data={name=gravity_pp}
+timestamp=[2022-02-25 11:32:00], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:34:47], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:34:53], mode=BUILD, duration=0:00:06.339, duration_ms=6339, data={name=gravity_app_system, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:37:08], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:37:35], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=gravity_app, configuration=Debug, clean_build=false}
+timestamp=[2022-02-25 11:37:41], mode=BUILD, duration=0:00:06.381, duration_ms=6381, data={name=gravity_app_system, configuration=Debug, clean_build=false}
