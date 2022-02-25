@@ -1,0 +1,12 @@
+01:34:38 INFO  : Launching XSCT server: xsct -n  -interactive /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/temp_xsdb_launch_script.tcl
+01:34:38 INFO  : Platform repository initialization has completed.
+01:34:38 INFO  : Registering command handlers for Vitis TCF services
+01:34:41 INFO  : XSCT server has started successfully.
+01:34:42 INFO  : plnx-install-location is set to ''
+01:34:42 INFO  : Successfully done setting XSCT server connection channel  
+01:34:42 INFO  : Successfully done query RDI_DATADIR 
+01:34:42 INFO  : Successfully done setting workspace for the tool. 
+01:37:09 INFO  : Result from executing command 'getProjects': gravity_pp
+01:37:09 INFO  : Result from executing command 'getPlatforms': 
+01:37:30 INFO  : Result from executing command 'getProjects': gravity_pp
+01:37:30 INFO  : Result from executing command 'getPlatforms': gravity_pp|/home/sam/git_workspace/floating-point-axi-lite-slave-interface-/gravity_pp/export/gravity_pp/gravity_pp.xpfm

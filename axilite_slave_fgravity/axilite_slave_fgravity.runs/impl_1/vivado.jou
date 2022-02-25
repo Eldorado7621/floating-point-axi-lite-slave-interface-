@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Feb 25 01:32:08 2022
+# Process ID: 1541
+# Current directory: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axilite_slave_fgravity/axilite_slave_fgravity.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axilite_slave_fgravity/axilite_slave_fgravity.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axilite_slave_fgravity/axilite_slave_fgravity.runs/impl_1/vivado.jou
+# Running On: sam-HP-Pavilion-Laptop-15-eg0xxx, OS: Linux, CPU Frequency: 3577.781 MHz, CPU Physical cores: 4, Host memory: 16540 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

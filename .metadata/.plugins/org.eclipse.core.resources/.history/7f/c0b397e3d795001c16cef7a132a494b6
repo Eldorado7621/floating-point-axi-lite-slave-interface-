@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+#include <xparameters.h>
+#include "platform.h"
+#include <xgravity.h>
+#include "xil_printf.h"
+
+
+int main()
+{
+    init_platform();
+
+    //initialize the gravity IP core
+    int status;
+    XGravity doGravity;
+    XGravity_Config *doGravity_cfg;
+
+    doGravity_cfg=XGravity_LookupConfig(XPAR_GRAVITY_0_DEVICE_ID);
+    if(!doGravity_cfg)
+    {
+    	 printf("error loading config files\n\r");
+    }
+    status XGravity_CfgInitialize(&doGravity,*doGravity_cfg);
+    if(status!=XST_SUCCESS)
+    {
+        	 printf("error initializing doGravoty \n\r");
+      }
+    //XGravity_Initialize(&doGravity,XPAR_GRAVITY_0_DEVICE_ID);
+
+    return 0;
+}

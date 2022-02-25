@@ -1,0 +1,101 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 9493
+License: Customer
+
+Current time: 	Fri Feb 25 01:34:38 CET 2022
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.4.0-100-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :1
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 287 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/tools/Xilinx/Vivado/2021.2/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	sam
+User home directory: /home/sam
+User working directory: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2021.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/sam/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-
+Vitis workspace log file location: /home/sam/git_workspace/floating-point-axi-lite-slave-interface-/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2021.2
+XILINX_SDK: /tools/Xilinx/Vitis/2021.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+setTextField("gravity_pp", "New Platform Project (Create new platform project)", "NewPlatformProjectWizard", "Text.PLATFORM_PROJECT_NAME");
+selectButton("Next", "New Platform Project (Create new platform project)", "NewPlatformProjectWizard", "Button.NEXT");
+selectTab("Select a platform from repository", "New Platform Project (Platform)", "NewPlatformProjectWizard", "CTabItem.SELECT_A_PLATFORM");
+selectTab("Create a new platform from hardware", "New Platform Project (Platform)", "NewPlatformProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Platform Project (Platform)", "NewPlatformProjectWizard", "Button.BROWSE");
+setFileDialog("/home/sam/git_workspace/floating-point-axi-lite-slave-interface-/axilite_slave_fgravity/design_1_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Finish", "New Platform Project (Platform)", "NewPlatformProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("gravity_pp", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("File", "gravity_pp", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "gravity_pp", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "gravity_pp", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("gravity_app", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Empty Application", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectTreeTable("Hello World", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("platform.spr", "gravity_pp", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTree("Board Support Package", "gravity_pp > ps7_cortexa9_0 > standalone on ps7_cortexa9_0", "gravity_pp", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTree("Board Support Package", "gravity_pp > ps7_cortexa9_0 > standalone on ps7_cortexa9_0", EventType.DOUBLE_CLICK, "gravity_pp", "ScwEditor", "Tree");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("helloworld.c", "gravity_app_system > gravity_app > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Outline", "ContentOutline", "CTabItem.OUTLINE");
+selectTree("xgravity.h", "gravity_app_system > gravity_app > src", EventType.DOUBLE_CLICK, "Outline", "ContentOutline", "Tree.helloworld_c");
+activateView("*helloworld.c", "gravity_app/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectTree("xparameters.h", EventType.DOUBLE_CLICK, "Outline", "ContentOutline", "Tree.helloworld_c");
+setCombo("gravity", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("*helloworld.c", "gravity_app/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
