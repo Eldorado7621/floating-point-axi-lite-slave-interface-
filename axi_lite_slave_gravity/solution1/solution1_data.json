@@ -68,7 +68,11 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top gravity -name gravity"],
+    "ConfigTcl": [
+      "config_export -output=\/home\/sam\/git_workspace\/floating-point-axi-lite-slave-interface-",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "gravity"
@@ -608,7 +612,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-02-25 00:24:40 CET",
+    "Time": "2022-02-25 01:15:52 CET",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

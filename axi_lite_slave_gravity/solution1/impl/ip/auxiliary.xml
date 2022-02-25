@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="gravity" xd:componentRef="gravity" xd:initiationInterval="24" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_CRTLS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CRTLS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="m1" xd:originalName="m1" xd:direction="in" xd:interfaceRef="s_axi_CRTLS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="m2" xd:originalName="m2" xd:direction="in" xd:interfaceRef="s_axi_CRTLS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="distc" xd:originalName="distc" xd:direction="in" xd:interfaceRef="s_axi_CRTLS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="23" xd:worst-case="23" xd:average-case="23"/>
+  <xd:resourceEstimates xd:LUT="1143" xd:FF="630" xd:BRAM="0" xd:DSP="6"/>
+</xd:acceleratorMap>
